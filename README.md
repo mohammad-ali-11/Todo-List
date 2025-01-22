@@ -1,5 +1,1 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+پروژه مدیریت کارها (Todo List) با هدف کمک به کاربران برای مدیریت وظایف روزانه‌شان طراحی شده است. این برنامه به کاربران امکان می‌دهد تا TODOهای خود را اضافه کنند، آن‌ها را به عنوان انجام‌شده علامت بزنند یا در صورت نیاز حذف کنند. وظایف به صورت پایدار در مرورگر ذخیره می‌شوند، بنابراین حتی پس از بستن برنامه، همچنان در دسترس خواهند بود. این پروژه با استفاده از Vue.js و Vite پیاده‌سازی شده و هدف آن ارائه تجربه‌ای روان و مدرن برای کاربران است. طراحی رابط کاربری مینیمال و کاربرپسند است و تجربه کاربری مناسبی را در دستگاه‌های مختلف ارائه می‌دهد. از فناوری‌هایی مانند JavaScript (ES6) برای پیاده‌سازی منطق برنامه، CSS برای طراحی استایل‌ها، و Git و GitHub برای کنترل نسخه و میزبانی پروژه استفاده شده است.
