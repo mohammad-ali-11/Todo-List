@@ -33,11 +33,18 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: **Install Node.js**  # <span style="color:red;">اضافه شده برای نصب Node.js</span>
+        uses: actions/setup-node@v3  # <span style="color:red;">اضافه شده برای نصب Node.js</span>
+        with:  # <span style="color:red;">پیکربندی نسخه Node.js</span>
+          node-version: 16  # <span style="color:red;">نسخه Node.js که برای پروژه‌های Vite و Vue.js استفاده می‌شود</span>
+      - name: **Install dependencies**  # <span style="color:red;">نصب وابستگی‌های پروژه</span>
+        run: npm install  # <span style="color:red;">دستور نصب وابستگی‌ها</span>
+      - name: **Build project**  # <span style="color:red;">ساخت فایل‌های استاتیک</span>
+        run: npm run build  # <span style="color:red;">دستور build برای تولید فایل‌های خروجی در پوشه dist</span>
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: './dist'  # <span style="color:red;">تغییر مسیر خروجی به پوشه dist</span>
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
